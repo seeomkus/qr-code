@@ -74,6 +74,8 @@ qr-code/
 ├── qr.cmd                  # pengelola aplikasi untuk Windows
 ├── scripts/
 │   └── manage.mjs          # logika install, build, start, stop, restart, status
+├── docs/
+│   └── screenshots/        # tangkapan layar aplikasi (PNG)
 ├── .run/                   # dibuat otomatis: PID dan log server
 ├── README.md               # dokumentasi ini
 ├── seeomkus-qr-webapp-infographic-landscape.png   # infografis (lanskap)
@@ -268,10 +270,28 @@ Jika komputer punya beberapa adapter jaringan (misalnya VMware atau VirtualBox),
 
 ## 7. Panduan Penggunaan
 
+Tangkapan layar di bagian ini diambil dari aplikasi yang berjalan di Chrome, dalam ukuran layar HP (kiri ke kanan: Beranda, Buat QR, Scan, Riwayat) dan layar komputer.
+
+| Beranda | Buat QR | Hasil Scan | Riwayat |
+|:---:|:---:|:---:|:---:|
+| <img src="docs/screenshots/mobile-beranda.png" alt="Beranda" width="180"> | <img src="docs/screenshots/mobile-buat-hasil.png" alt="Buat QR Code" width="180"> | <img src="docs/screenshots/mobile-scan-hasil.png" alt="Hasil scan" width="180"> | <img src="docs/screenshots/mobile-riwayat.png" alt="Riwayat" width="180"> |
+
 ### 7.1 Beranda
+
+<img src="docs/screenshots/mobile-beranda.png" alt="Beranda di HP" width="260">
+
+![Beranda di komputer](docs/screenshots/desktop-beranda.png)
 Berisi pintasan ke **Buat QR Code**, **Scan QR Code**, dan **Riwayat**. Navigasi utama berada di bar bawah layar.
 
 ### 7.2 Membuat QR Code
+
+| Isi data | QR Code jadi |
+|:---:|:---:|
+| <img src="docs/screenshots/mobile-buat-form.png" alt="Form buat QR" width="260"> | <img src="docs/screenshots/mobile-buat-hasil.png" alt="Hasil QR Code" width="260"> |
+
+Tampilan di komputer (form di kiri, hasil di kanan):
+
+![Buat QR di komputer](docs/screenshots/desktop-buat.png)
 1. Buka menu **Buat QR**.
 2. Pilih jenis data: Teks, Link Web, Telepon, SMS, Email, atau WiFi.
 3. Isi **Judul / Nama** (wajib) sebagai penanda di riwayat.
@@ -280,6 +300,12 @@ Berisi pintasan ke **Buat QR Code**, **Scan QR Code**, dan **Riwayat**. Navigasi
 6. QR Code tampil dan otomatis tersimpan. Tekan **Unduh PNG** untuk menyimpan gambar, atau **Buat Baru** untuk mengulang.
 
 ### 7.3 Scan QR Code
+
+| Sebelum scan | Hasil: WiFi | Hasil: Link Web |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/mobile-scan.png" alt="Halaman Scan" width="200"> | <img src="docs/screenshots/mobile-scan-hasil-wifi.png" alt="Hasil scan WiFi" width="200"> | <img src="docs/screenshots/mobile-scan-hasil.png" alt="Hasil scan link" width="200"> |
+
+Catatan: tangkapan hasil scan di atas diambil lewat fitur **Dari Gambar**. Pembacaan lewat kamera menampilkan hasil yang sama.
 1. Buka menu **Scan** lalu tekan **Mulai Scan**.
 2. Izinkan akses kamera.
 3. Arahkan kamera ke QR Code di dalam bingkai hijau. Pembacaan berjalan otomatis.
@@ -294,6 +320,10 @@ Tombol tambahan:
 Setiap hasil scan otomatis disimpan ke riwayat. Jika isinya sama dengan QR yang pernah dibuat di aplikasi ini, tampil kotak **"Dikenali dari QR yang dibuat di aplikasi ini"** berisi judul dan tanggal pembuatan.
 
 ### 7.4 Riwayat
+
+<img src="docs/screenshots/mobile-riwayat.png" alt="Riwayat di HP" width="260">
+
+![Riwayat di komputer](docs/screenshots/desktop-riwayat.png)
 Terdapat dua tab:
 - **QR Dibuat**: ketuk satu item untuk melihat gambar QR, isi data, dan tombol **Hapus**.
 - **Hasil Scan**: ketuk satu item untuk melihat informasi hasil scan dan tombol **Hapus**.
