@@ -1,0 +1,13 @@
+{
+  "name": "seeomkus-qr",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "app": "node scripts/manage.mjs",
+    "install:all": "node scripts/manage.mjs install",
+    "build": "node scripts/manage.mjs build",
+    "start": "npm --prefix backend run start",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev"
+  }
+}
